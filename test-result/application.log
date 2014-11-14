@@ -1,0 +1,9 @@
+14 Nov 2014 14:51:41,921 INFO  ~ Starting C:\play-1.2.4\fitapp
+14 Nov 2014 14:51:43,757 WARN  ~ You're running Play! in DEV mode
+14 Nov 2014 14:51:44,329 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+14 Nov 2014 14:52:10,660 INFO  ~ Connected to jdbc:mysql://localhost/fitapp?useUnicode=yes&characterEncoding=UTF-8&connectionCollation=utf8_general_ci
+14 Nov 2014 14:52:12,711 ERROR ~ Unsuccessful: create table Alimento (id bigint not null auto_increment, calorias double precision not null, carbs double precision not null, desc varchar(255), grasas double precision not null, proteina double precision not null, primary key (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8
+14 Nov 2014 14:52:12,716 ERROR ~ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc varchar(255), grasas double precision not null, proteina double precision n' at line 1
+14 Nov 2014 14:52:13,500 ERROR ~ Unsuccessful: alter table Dieta_Alimento add index FK53415945936069F1 (alimentos_id), add constraint FK53415945936069F1 foreign key (alimentos_id) references Alimento (id)
+14 Nov 2014 14:52:13,501 ERROR ~ Cannot add foreign key constraint
+14 Nov 2014 14:52:14,032 INFO  ~ Application 'fitapp' is now started !
